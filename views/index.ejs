@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/assets/styles.css" type="text/css">
+  </head>
+  <body>
+    <header class="hr">
+      <h1 id="title">Valorant  survey</h1>
+      <p class="italic" id="description">A form which collects details about your valorant rank and other valorant related details</p>
+    </header>
+    <form method="POST" id="survey-form" action="/formRead">
+    <div class="div-space">
+      <label id="name-label" for="name">Name </label> <input class="transparent-input" placeholder="Enter your name" required id="name" type="text" name ="name">
+    </div>
+    <div class="div-space">
+       <label id="email-label" for="email">Email </label><input class="transparent-input"  placeholder="Enter your email" required id="email" type="email" name ="email">
+    </div>
+    <div class="div-space">
+      <label id="number-label" for="number">Age<span> (optional)</span> </label> <input class="transparent-input" placeholder="Enter your age" id="number" type="number" min="17" max="22" name = "age">
+    </div>
+    <div class="div-space">
+      <label>Which option best describes your role</label>
+      <select class="transparent-input" required id="dropdown" name = "role">
+        <option disabled selected value>Selected your role</option>
+        <option value="highschool student">Highschool Student</option>
+        <option value="college student">College student</option>
+        <option value="worker">Worker</option>
+      </select>
+     </div>
+     <div>
+       <p>What is your peak rank?</p>
+       <label><input id ="rank" class="transparent-input" type="text" required placeholder="Enter your rank" name = "rank"></label>
+     </div>
+     <div>
+       <button class="button-style" id="submit">Submit</button>
+     </div>
+    </form>
+       
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      
+      .hr {
+        background-color: #1f497d;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      #title {
+        font-size: 36px;
+      }
+      
+      .italic {
+        font-style: italic;
+      }
+      
+      .div-space {
+        margin: 10px;
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      
+      .transparent-input {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      #dropdown {
+        width: 100%;
+      }
+      
+      .button-style {
+        background-color: #1f497d;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .button-style:hover {
+        background-color: #154281;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hr">
+      <h1 id="title">Valorant Survey</h1>
+      <p class="italic" id="description">A form which collects details about your Valorant rank and other Valorant-related details</p>
+    </header>
+    <form method="POST" id="survey-form" action="/formRead">
+      <div class="div-space">
+        <label id="name-label" for="name">Name</label>
+        <input class="transparent-input" placeholder="Enter your name" required id="name" type="text" name="name">
+      </div>
+      <div class="div-space">
+        <label id="email-label" for="email">Email</label>
+        <input class="transparent-input" placeholder="Enter your email" required id="email" type="email" name="email">
+      </div>
+      <div class="div-space">
+        <label id="number-label" for="number">Age<span> (optional)</span></label>
+        <input class="transparent-input" placeholder="Enter your age" id="number" type="number" min="17" max="22" name="age">
+      </div>
+      <div class="div-space">
+        <label>Which option best describes your role</label>
+        <select class="transparent-input" required id="dropdown" name="role">
+          <option disabled selected value>Select your role</option>
+          <option value="highschool student">High School Student</option>
+          <option value="college student">College Student</option>
+          <option value="worker">Worker</option>
+        </select>
+      </div>
+      <div>
+        <p>What is your peak rank?</p>
+        <label><input id="rank" class="transparent-input" type="text" required placeholder="Enter your rank" name="rank"></label>
+      </div>
+      <div>
+        <button class="button-style" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
